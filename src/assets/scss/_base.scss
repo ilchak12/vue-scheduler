@@ -1,0 +1,64 @@
+body {
+	position: relative;
+	min-width: 320px;
+	font-family: $font-main;
+	font-size: $fontsize;
+	color: $color-night;
+    background-color: $color-smoke-white;
+
+	//overflow-y: hidden;
+}
+
+input,
+textarea {
+	font-family: $font-main;
+}
+
+.container {
+	max-width: 1080px;
+	width: 89%;
+	margin: 0 auto;
+
+	@include media(768) {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 32px;
+    line-height: 120%;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 150%;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 120%;
+}
+
+p {
+	line-height: 140%;
+    font-size: 16px;
+}
+
+@keyframes shine {
+	100% {left: 100%}
+}
+
+@include media(1280) {
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
